@@ -1,0 +1,22 @@
+.card {
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: 400px;
+   align-items: stretch;
+    /* width: 169px; */
+}
+
+.card > li {
+    justify-self: stretch;
+    align-self: stretch;
+    height: 400px;
+    margin: 10px;
+
+}
+.card > li>img {
+    justify-self: stretch;
+   height: 100%;
+}
+.card > li>p{
+    overflow: hidden;
+}

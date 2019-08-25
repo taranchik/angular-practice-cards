@@ -1,0 +1,19 @@
+<ul class="card">
+    <li *ngFor="let product of products">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>{{product.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="product.iconUrl" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    {{product.desc}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="onAddProductToCart(product)">ADD</button>
+                <button mat-button (click)="onRemoveFromCart(product)">REMOVE</button>
+            </mat-card-actions>
+        </mat-card>
+    </li>
+</ul>
